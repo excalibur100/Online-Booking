@@ -1,0 +1,265 @@
+ *{
+    margin: 0%;
+    padding: 0%;
+ }
+
+ body{
+   background-image: url("https://springboard-cdn.appadvice.com/wp-content/appadvice-v2-media/2016/11/Netflix-background_860c8ece6b34fb4f43af02255ca8f225-xxl.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    backdrop-filter: blur(10px);
+ }
+
+ .fnav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 6px;
+    color: white;
+    background-color: #000000;
+ }
+
+ .fnav .left{
+    display:flex;
+    margin-top: 10px;
+
+ }
+ .left img{
+    width: 25%;
+    margin-left:-25%;
+ }
+ 
+ .left input{
+    margin-inline: 10px;
+    width: 400px;
+    height: 30px;
+    border: none;
+    outline: none;
+    text-align: center;
+    margin-top: 16px;
+    border-radius: 2px;
+    background-color: #FDE2F3;
+    color: rgb(0, 0, 0);
+ }
+
+ .fnav .right{
+    display: flex;
+    margin-top: 11px;
+    
+ }
+
+ .right p{
+    margin-inline: 22px;
+    font-size: 22px;
+
+ }
+
+ .right button{
+    margin-inline: 22px;
+    width: 80px;
+    height: 27px;
+    border: none;
+    border-radius: 2px;
+ }
+
+ .right i{
+    margin-inline: 22px;
+    font-size: 22px;
+ }
+
+ .sec-nav{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+    padding: 6px;
+    background-color: #413F42;
+    color: white;
+ }
+ .sec-nav a{
+   display: flex;
+   justify-content: center;
+   justify-content: space-around;
+   padding: 1px;
+   background-color: #413F42;
+   color: white;
+}
+
+ .sec-nav .s-left{
+    display: flex;
+ }
+
+ .sec-nav p:hover{
+    color:#E11299 ;
+    cursor: pointer;
+    font-weight: 600;
+ }
+ .sec-nav a:hover{
+   color:#E11299 ;
+   cursor: pointer;
+   font-weight: 600;
+}
+
+ .s-left p{
+    margin-inline-start: 18px;
+ }
+
+ .main{
+   display: flex;
+   justify-content: center;
+   overflow: hidden;
+   height: 300px;
+   width: 100vw;
+   margin-left: 0px;
+   margin-top:  0px;
+}
+
+/*---------- SLIDE ANIMATION --------------*/
+
+@keyframes slide_animation{
+   0% {left:0px;}
+   10% {left:0px;}
+   20% {left:1200px;}
+   30% {left:1200px;}
+   40% {left: 2400px;}
+   50% {left: 2400px;}
+   60% {left: 1200px;}
+   70% {left: 1200px;}
+   80% {left: 0px;}
+   90% {left: 0px;}
+   100% {left:0px;}
+}
+
+@-webkit-keyframes slide_animation{
+   0% {left:0px;}
+   10% {left:0px;}
+   20% {left:1200px;}
+   30% {left:1200px;}
+   40% {left: 2400px;}
+   50% {left: 2400px;}
+   60% {left: 1200px;}
+   70% {left: 1200px;}
+   80% {left: 0px;}
+   90% {left: 0px;}
+   100% {left:0px;}
+}
+
+.slide-images{
+   display: flex;
+   overflow-x: auto;
+   scroll-behavior: smooth;
+   scroll-snap-type: x mandatory;
+   
+}
+
+ /*.slide-images{
+   width: 100%;
+   height: 800px;
+   margin: 0 auto;
+   position: relative;
+   -webkit-animation-name: slide_animation;
+   animation-name: slide_animation;
+   -webkit-animation-duration: 33s;
+   animation-duration: 33s;
+   -webkit-animation-iteration-count: infinite;
+   animation-iteration-count: infinite;
+   -webkit-animation-direction: alternate;
+   animation-direction: alternate;
+   -webkit-animation-play-state: running;
+   animation-play-state: running;
+}
+
+
+.img-container{
+   width: 100%;
+   background-size: cover;
+   z-index: 999;
+}
+
+.img-container {
+   width: 100vw; 
+   max-width: 100%;
+   height: 800px;
+   position: relative;
+   float: left;
+   object-fit: cover;
+}*/
+
+
+ .container h2{
+   color: azure;
+    text-align: center;
+    padding: 22px;
+ }
+
+ .container .card{
+    display: flex;
+    justify-content: center;
+    justify-content: space-around;
+ }
+
+ .card img{
+    width: 18%;
+    margin-block: 15px;
+    border-radius: 5px;
+ }
+
+ .banner{
+   height: 120px;
+    width: 100%;
+    margin-top: 44px;
+    text-align: center;
+    background-color: rgb(0, 0, 0,.6);
+    backdrop-filter: grayscale(1) contrast(1) blur(1px);
+ }
+ .animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #f46cf1 0%,
+    #be4ee0 29%,
+    #ff009d 67%,
+    #ff0059 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 80px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+ .premiere{
+    background-color: #03001C ;
+    color: rgb(255, 255, 255);
+    padding: 33px;
+    margin-top: 44px;
+ }
+
+ .container h2{
+    margin: center;
+ }
+
+
+ .container .card{
+    margin-top: 11px;
+ }
+
+ .premiere img{
+   padding: 24px;
+ }
+
+ .premiere div{
+   text-align: center;
+ }
